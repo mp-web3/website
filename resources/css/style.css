@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 16px;
+    color: white;
 }
 
 header {
@@ -59,6 +60,21 @@ header {
 
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.above-the-fold {
+    height: calc(100vh - 70px);
+    background-image: url(../images/blockchain-background-dots.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-atf {
+    opacity: 1;
 }
 
 @media(max-width:768px) {

@@ -1,13 +1,14 @@
-  // toggle navbar display on small screens
-  const nav = document.getElementById("navbar");
-  const toggleBtn = document.querySelector(".navbar-toggle")
-  
-  function toggleNav() {
-    if (nav.style.display === "block") {
-      nav.style.display = "none";
-    } else {
-      nav.style.display = "block";
-    }
-  }
 
-toggleBtn.onclick = toggleNav;
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+
+})
+
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+}))

@@ -10,6 +10,18 @@ header {
     background-color: #262626;
 }
 
+h1 {
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .nav-item {
     list-style: none;
 }
@@ -76,6 +88,18 @@ header {
 .content-atf {
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:768px) {
     .hamburger {

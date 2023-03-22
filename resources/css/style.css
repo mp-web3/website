@@ -95,27 +95,34 @@ h3 {
 }
 
 .under-the-fold {
-    background-color: #1a191d;
-    /* height: 100vh; */
+    height: 120vh;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: #1a191d;
+    background-image: linear-gradient(0deg, rgba(26, 25, 29, 0.7), 
+    rgba(26, 25, 29, 0.7)), url(../images/hello-world-html-code-768x384.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 .heading {
-    margin-top: 150px;
+    margin-top: 0px;
 }
 
 #expertise-container {
-    padding: 50px;
+    width: 100%;
+    padding: 100px 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/hello-world-html-code-768x384.png);
-    background-color: #1a191d;
-    background-blend-mode:luminosity;
 }
 
 .expertise-item {
@@ -138,7 +145,15 @@ h3 {
     margin-right: 25px;
 }
 
-
+.portfolio-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a191d;
+}
 
 
 

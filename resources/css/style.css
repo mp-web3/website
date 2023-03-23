@@ -1,3 +1,10 @@
+:root {
+    --dark: #262626;
+    --light: #ffffff;
+    --link: #1e90ff;
+    --dark-transparent: rgba(26, 25, 29, 0.7);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,7 +15,7 @@
 }
 
 header {
-    background-color: #262626;
+    background-color: var(--dark);
 }
 
 h1 {
@@ -32,7 +39,7 @@ h3 {
 }
 
 .nav-link, .nav-branding {
-    color: white;
+    color: var(--light);
     text-decoration: none;
 }
 
@@ -60,7 +67,7 @@ h3 {
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: var(--link);
 }
 
 .hamburger {
@@ -73,7 +80,7 @@ h3 {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: white;
+    background-color: var(--light);
 
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -103,9 +110,9 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: #1a191d;
-    background-image: linear-gradient(0deg, rgba(26, 25, 29, 0.7), 
-    rgba(26, 25, 29, 0.7)), url(../images/hello-world-html-code-768x384.png);
+    background-color: var(--dark);
+    background-image: linear-gradient(0deg, var(--dark-transparent), 
+    var(--dark-transparent)), url(../images/hello-world-html-code-768x384.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -126,7 +133,7 @@ h3 {
 }
 
 .expertise-item {
-    border: 1px solid white;
+    border: 1px solid var(--light);
     padding: 50px 25px;
     flex-grow: 1;
     max-width: 400px;
@@ -150,11 +157,15 @@ h3 {
     padding-top: 50px;
     padding-bottom: 150px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #1a191d;
+    background-color: var(--dark);
 }
 
+.card {
+    border: 1px solid var(--light);
+}
 
 
 

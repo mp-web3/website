@@ -1,21 +1,31 @@
 :root {
-    --dark: #262626;
+    --dark: #1a191d;
     --light: #ffffff;
-    --link: #1e90ff;
+    --accent: #1e90ff;
     --dark-transparent: rgba(26, 25, 29, 0.7);
 }
 
-* {
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+* {
     font-size: 16px;
-    color: white;
+    color: var(--light);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
     background-color: var(--dark);
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--dark);
+    display: flexbox;
+    flex-direction: column;
 }
 
 h1 {
@@ -31,7 +41,6 @@ h2 {
 h3 {
     font-size: 2rem;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .nav-item {
@@ -67,7 +76,7 @@ h3 {
 }
 
 .nav-link:hover {
-    color: var(--link);
+    color: var(--accent);
 }
 
 .hamburger {
@@ -102,7 +111,7 @@ h3 {
 }
 
 .under-the-fold {
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 150px;
@@ -110,7 +119,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: var(--dark);
     background-image: linear-gradient(0deg, var(--dark-transparent), 
     var(--dark-transparent)), url(../images/hello-world-html-code-768x384.png);
     background-size: 50%;
@@ -130,12 +138,14 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 }
 
 .expertise-item {
     border: 1px solid var(--light);
     padding: 50px 25px;
     flex-grow: 1;
+    min-height: 350px;
     max-width: 400px;
 }
 
@@ -160,15 +170,55 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark);
+    border: 1px solid red;
 }
 
 .card {
-    border: 1px solid var(--light);
+    background-image: url(../images/blockchain-background-dots.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border: 1px solid red;
 }
 
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% / 0),
+        hsl(20 0% 0% / 0.3) 20%,
+        hsl(0 0% 0% / 1)
+    );
+}
 
+.card-title {
+    position: relative;
+    width: max-content;
+}
 
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding)*-1);
+    bottom: 0;
+    width: calc(100% + var(--padding));
+    background: var(--accent);
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dark);
+    background-color: var(--accent);
+    padding: 0.5em 1.25em;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--light);
+}
 
 
 
@@ -196,7 +246,7 @@ h3 {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #262626;
+        background-color: var(--dark);
         width: 100%;
         text-align: center;
         transition: 0.3s;

@@ -332,4 +332,13 @@ h3 {
     h3, h4 {
         font-size: 1.5rem;
     }
+
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 80%;
+    }
 }

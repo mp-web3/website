@@ -33,7 +33,7 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     padding: 0;
     margin: 0;
 }
@@ -50,6 +50,11 @@ h2 {
 h3 {
     font-size: 2rem;
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: 0.8rem;
+    padding: 0 0 calc(var(--padding)/2) 0;
 }
 
 .nav-item {
@@ -300,6 +305,9 @@ h3 {
 
 footer {
     display: flex;
+    padding: calc(var(--padding)*3) var(--padding);
+    align-items: center;
+    justify-content: center;
 }
 
 .footer_div {
@@ -312,6 +320,56 @@ footer {
     font-size: 2rem;
 }
 
+.small-paragraph {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0;
+}
+
+.unordered-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer_contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap)*2);
+}
+
+#footer_img-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 1px solid red;
+}
+
+#footer_button_arrow {
+    background: var(--light);
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: 1px solid red;
+    transition: transform 200ms ease-out;
+}
+
+#footer_button_arrow:hover {
+    transform: scale(0.8);
+    transition: 200ms ease-in;
+}
+
+#footer_arrow {
+    width: 70%;
+    height: auto;
+    align-self: center;
+    transform: translateY(75%);
+  }
 
 @media(max-width:768px) {
     .hamburger {
@@ -356,8 +414,12 @@ footer {
         font-size: 2.5rem;
     }
 
-    h3, h4 {
+    h3 {
         font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
     }
 
     .under-the-fold {
@@ -381,6 +443,25 @@ footer {
 
     .card {
         width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: var(--padding) calc(var(--padding)*1.5);
+        padding-bottom: calc(var(--padding)*3);
+    }
+
+    .footer_div {
+        width: 100%;
+    }
+
+    .small-paragraph {
+        font-size: 0.9rem;
+    }
+
+    #footer_img-container {
+        padding-top: calc(var(--padding)*3);
+        justify-content: flex-start;
     }
 
 }

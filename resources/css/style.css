@@ -75,6 +75,10 @@ h4 {
     padding: 0 0 calc(var(--padding)/2) 0;
 }
 
+.mobile {
+    display: none;
+}
+
 .nav-item {
     list-style: none;
 }
@@ -461,7 +465,8 @@ footer {
     }
 
     h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        width: 100%;
     }
 
     h2 {
@@ -474,6 +479,36 @@ footer {
 
     h4 {
         font-size: 0.8rem;
+    }
+
+    .above-the-fold {
+        height: auto;
+    }
+
+    .content-atf {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid yellow;
+    }
+
+    .content-atf h3, .content-atf h1, .content-atf p {
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+
+    .profile-picture_container {
+        width: 70%;
+        height: auto;
     }
 
     .under-the-fold {

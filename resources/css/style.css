@@ -34,7 +34,6 @@
 
 header {
     background-color: var(--dark);
-    border: 1px solid red;
     width: var(--container-width);
 }
 
@@ -144,12 +143,10 @@ h4 {
     justify-content: space-between;
     /*padding: 0 calc(var(--padding)*4);*/
     padding: 0;
-    border: 1px solid red;
 }
 
 .above-the-fold-element {
     text-align: left;
-    border: 1px solid red;
 }
 
 .content-atf {
@@ -158,7 +155,6 @@ h4 {
 
 .profile-picture_container{
     width: 30%;
-    border: 1px solid green;
     display: block;
 }
 
@@ -206,7 +202,7 @@ h4 {
 
 .under-the-fold {
     min-height: 120vh;
-    width: 100%;
+    width: 90%;
     padding-top: calc(var(--padding)*5);
     padding-bottom: calc(var(--padding)*20);
     display: flex;
@@ -218,7 +214,6 @@ h4 {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
-    border: 1px solid red;
 }
 
 .under-the-fold-2 {
@@ -237,17 +232,17 @@ h4 {
 }
 
 #expertise-container {
-    width: 100%;
+    width: 90%;
     padding: calc(var(--padding)*3) var(--padding);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
 }
 
 .expertise-item {
-    border: 1px solid var(--light);
+    border: 1px solid var(--accent);
+    box-shadow: var(--neon-box-shadow);
     padding: calc(var(--padding)*3) var(--padding);
     flex-grow: 1;
     min-height: 350px;
@@ -258,7 +253,6 @@ h4 {
     display: flex;
     align-items: center;
     margin-bottom: calc(var(--margin)*3);
-    border: 1px solid red;
 }
 
 .expertise-img {
@@ -274,7 +268,6 @@ h4 {
     justify-content: center;
     gap: var(--gap);
     padding: calc(var(--padding)*3) var(--padding);
-    border: 1px solid red;
 }
 
 .card {
@@ -283,7 +276,7 @@ h4 {
     max-width: 35ch;
     border-radius: 0.5rem;
     overflow: hidden;
-    border: 1px solid red;
+
     min-width: 300px;
     transition: transform 500ms ease;
 }
@@ -339,8 +332,6 @@ h4 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
     var(--accent2-transparent)), url(../images/card-background_polygons-neon-3.jpg);
 }
-
-
 
 @media (hover) {
     .card-content {
@@ -580,7 +571,6 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid yellow;
     }
 
     .content-atf h3, .content-atf h1, .content-atf p {
@@ -606,6 +596,13 @@ footer {
 
     #expertise-container {
         gap: var(--gap);
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .expertise-item {
+        width: 100%;
     }
 
     .portfolio-container {

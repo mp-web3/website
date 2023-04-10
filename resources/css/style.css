@@ -211,8 +211,9 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: linear-gradient(0deg, var(--dark-transparent), 
-    var(--dark-transparent)), url(../images/hello-world-html-code-768x384.png);
+    /*background-image: linear-gradient(0deg, var(--dark-transparent), 
+    var(--dark-transparent)), url(../images/hello-world-html-code-768x384.png);*/
+    background-image: url(../images/hello-world-html-code_50-opacity.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -584,12 +585,7 @@ footer {
 
     .under-the-fold {
         padding-bottom: calc(var(--padding)*5);
-        background-image: linear-gradient(0deg, var(--dark-transparent), 
-        var(--dark-transparent)), url(../images/hello-world-html-code-768x384.png);
         background-size: 90%;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
     }
 
     #expertise-container {

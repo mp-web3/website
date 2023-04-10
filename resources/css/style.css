@@ -589,6 +589,13 @@ footer {
         height: auto;
     }
 
+    .social-media {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
     .under-the-fold {
         padding-bottom: calc(var(--padding)*5);
         background-size: 90%;

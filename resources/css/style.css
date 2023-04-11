@@ -484,7 +484,7 @@ footer {
 }
 
 #footer_button_arrow {
-    background: var(--light);
+    background: var(--accent);
     width: 50%;
     height: 0;
     padding-bottom: 50%;
@@ -493,7 +493,8 @@ footer {
     justify-content: center;
     cursor: pointer;
     border-radius: 0.3rem;
-    border: 1px solid red;
+    border: 1px solid var(--accent);
+    box-shadow: var(--neon-box-shadow);
     transition: transform 200ms ease-out;
 }
 
@@ -507,6 +508,7 @@ footer {
     height: auto;
     align-self: center;
     transform: translateY(75%);
+    color: #fff;
   }
 
 @media(max-width:768px) {

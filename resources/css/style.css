@@ -232,12 +232,13 @@ h4 {
 }
 
 #expertise-container {
-    width: 90%;
+    width: 100%;
     padding: calc(var(--padding)*3) var(--padding);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 }
 
 .expertise-item {

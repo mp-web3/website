@@ -1,0 +1,27 @@
+.project {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.project-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.project-image {
+    flex: 1;
+    text-align: center;  /* Centering the image */
+}
+
+.project-image img {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reverse-layout {
+    flex-direction: row-reverse;
+}

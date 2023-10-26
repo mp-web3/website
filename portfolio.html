@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/form.css" />
+    <link rel="stylesheet" href="./resources/css/portfolio.css" />
+
+    <!--Box Icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <title>Mattia Papa Solidity & Frontend Developer</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-branding">MP_</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="above-the-fold">
+        <!-- Replace with a catchy introduction about your portfolio or a hero image -->
+        <h1>My Portfolio</h1>
+        <p>
+          A collection of projects that showcase my expertise in Solidity and
+          Frontend Development.
+        </p>
+      </section>
+
+      <section class="under-the-fold">
+        <h2 class="heading">Featured Projects</h2>
+        <div class="home-section">
+          <div class="container">
+            <!-- Project 1: Text Left, Image Right -->
+            <div class="project">
+              <div class="project-text">
+                <h2>Project Title 1</h2>
+                <p>
+                  Brief description about project 1. This is where you put a
+                  short summary of what the project is about.
+                </p>
+                <a href="project1.html" class="button">View Project</a>
+              </div>
+              <div class="project-image">
+                <img src="./resources/images/portfolio/project1-image.webp" alt="Project 1 Image" />
+              </div>
+            </div>
+
+            <!-- Project 2: Image Left, Text Right -->
+            <div class="project reverse-layout">
+              <div class="project-text">
+                <h2>Project Title 2</h2>
+                <p>
+                  Brief description about project 2. This section provides a
+                  concise summary.
+                </p>
+                <a href="project2.html" class="button">View Project</a>
+              </div>
+              <div class="project-image">
+                <img src="./resources/images/portfolio/project2-image.webp" alt="Project 2 Image" />
+              </div>
+            </div>
+
+            <!-- Project 3: Text Left, Image Right -->
+            <div class="project">
+              <div class="project-text">
+                <h2>Project Title 3</h2>
+                <p>
+                  Brief description about project 3. Add a short description
+                  here.
+                </p>
+                <a href="project3.html" class="button">View Project</a>
+              </div>
+              <div class="project-image">
+                <img src="./resources/images/portfolio/project3-image.webp" alt="Project 3 Image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="under-the-fold-2">
+        <h2>Other Works</h2>
+        <p>
+          While these might not be the highlight, every piece of work adds up to
+          my journey as a developer.
+        </p>
+        <div class="portfolio-container">
+          <!-- Smaller or brief descriptions or links to other works -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_div" id="footer">
+        <p class="footer_paragraph">
+          Looking to chat? Dive in and drop me a line! And if you're feeling
+          lazy, that arrow will whisk you back to the top. Try it, it's fun!
+        </p>
+        <div id="footer_contacts-container">
+          <div>
+            <form id="contact-form">
+              <div class="form-container">
+                <div class="form-field">
+                  <label class="form-label" for="name">Name *</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="email">Email *</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="user_email"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="message">Message *</label>
+                  <textarea
+                    class="form-textarea"
+                    id="message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+                <button class="form-button" type="submit" value="Send">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <div
+              id="success-message"
+              style="display: none; color: var(--accent)"
+            >
+              Your message has been sent successfully!
+            </div>
+          </div>
+
+          <div>
+            <h4>Want a faster answer? Drop me a line on Telegram!</h4>
+            <a class="button" href="https://t.me/mp_shadowy">Telegram</a>
+          </div>
+
+          <div>
+            <h4>Follow Me</h4>
+            <ul class="unordered-list">
+              <li class="small-paragraph">
+                <a
+                  href="https://github.com/mp-web3"
+                  target="_blank"
+                  class="social-link"
+                  >GitHub</a
+                >
+              </li>
+              <li class="small-paragraph">
+                <a
+                  href="https://twitter.com/web3_mp"
+                  target="_blank"
+                  class="social-link"
+                  >Twitter</a
+                >
+              </li>
+              <li class="small-paragraph">
+                <a
+                  href="https://www.linkedin.com/in/mattia-papa/"
+                  target="_blank"
+                  class="social-link"
+                  >Linkedln</a
+                >
+              </li>
+              <li class="small-paragraph">
+                <a
+                  href="https://discord.com/users/Mattia%20%7C%20Going%20to%20WCC%20%F0%9F%8F%9D#2902"
+                  target="_blank"
+                  class="social-link"
+                  >Discord</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="footer_img-container">
+        <button id="footer_button_arrow">
+          <img
+            id="footer_arrow"
+            src="./resources/images/up-arrow_white.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="./scripts/scripts.js"></script>
+  </body>
+</html>

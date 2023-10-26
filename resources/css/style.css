@@ -11,6 +11,7 @@
     --padding: 1rem;
     --margin: 1rem;
     --container-width: 90%;
+    --form-width: 50%;
     --neon-box-shadow: 0 0 10px #872B97,
     0 0 3px #872B97,
     0 0 3px #872B97,
@@ -40,12 +41,15 @@ header {
 body {
     line-height: 1.6;
     background-color: var(--dark);
+    padding: 0;
+    margin: 0;
+}
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -72,7 +76,8 @@ h3 {
 }
 
 h4 {
-    font-size: 0.8rem;
+    font-size: 1.25rem;
+    font-weight: 300;
     padding: 0 0 calc(var(--padding)/2) 0;
 }
 
@@ -559,7 +564,7 @@ footer {
     }
 
     h4 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .above-the-fold {

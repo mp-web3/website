@@ -74,3 +74,13 @@ arrowButtonUp.addEventListener('click', () => {
     window.scrollTo({top: 0, behavior: "smooth"});
 } )
 
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    if (window.scrollY > 50) {
+      header.classList.add("transparent");
+    } else {
+      header.classList.remove("transparent");
+    }
+  });
+});

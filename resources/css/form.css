@@ -56,3 +56,9 @@
 .form-textarea {
     resize: vertical;
 }
+
+@media(max-width:768px) {
+.form-container {
+    width: var(--form-width-mobile);
+}
+}

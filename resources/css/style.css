@@ -12,6 +12,7 @@
     --margin: 1rem;
     --container-width: 90%;
     --form-width: 50%;
+    --form-width-mobile: 90%;
     --neon-box-shadow: 0 0 10px #872B97,
     0 0 3px #872B97,
     0 0 3px #872B97,
@@ -35,7 +36,14 @@
 
 header {
     background-color: var(--dark);
-    width: var(--container-width);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.transparent {
+    background-color: var(--dark-transparent)
 }
 
 body {
@@ -533,7 +541,7 @@ footer {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
         gap: 0;
         flex-direction: column;
         background-color: var(--dark);
@@ -548,6 +556,7 @@ footer {
 
     .nav-menu.active {
         left: 0;
+        margin-top: 0;
     }
 
     h1 {

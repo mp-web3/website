@@ -2,9 +2,9 @@
 
 
 :root {
-    --dark: #171721;
+    --dark: rgb(23, 23, 33);
     --light: #F4F4F9;
-    --accent: #872B97;
+    --accent: rgb(135, 43, 151);
     --accent2: #FF3C68;
     --secondary: #FF7130;
     --dark-transparent: rgba(23, 23, 33, 0.5);
@@ -23,6 +23,8 @@
     0 0 1px #fff,
     0 0 1px #fff,
     0 0 1px #fff;
+    --navbar-height: 10vh;
+    --border-radius: 0.25em;
 }
 
 *,
@@ -106,7 +108,7 @@ h4 {
 }
 
 .navbar {
-    min-height: 70px;
+    min-height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,13 +153,9 @@ h4 {
 .above-the-fold {
     height: calc(100vh - 70px);
     width: var(--container-width);
-    /* background-image: url(../images/blockchain-background-dots.jpg); */
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /*padding: 0 calc(var(--padding)*4);*/
     padding: 0;
 }
 

@@ -23,6 +23,10 @@
     0 0 1px #fff,
     0 0 1px #fff,
     0 0 1px #fff;
+    --dark-box-shadow:
+    2px 2px 5px rgba(0, 0, 0, 0.5),
+    4px 4px 10px rgba(0, 0, 0, 0.5),
+    6px 6px 15px rgba(0, 0, 0, 0.5);
     --navbar-height: 10vh;
     --border-radius: 0.25em;
 }
@@ -313,6 +317,7 @@ h4 {
 .card-title {
     position: relative;
     width: max-content;
+    font-size: 1rem;
 }
 
 .card-title::after {
@@ -334,17 +339,20 @@ h4 {
 
 #card-1 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/card-background_polygons-neon-1.jpg);
+    var(--accent2-transparent)), url(../images/portfolio/neon-supernova.png);
+    background-position: center;
 }
 
 #card-2 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/card-background_polygons-neon-2.jpg);
+    var(--accent2-transparent)), url(../images/portfolio/neon-shell.png);
+    background-position: center;
 }
 
 #card-3 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/card-background_polygons-neon-3.jpg);
+    var(--accent2-transparent)), url(../images/portfolio/neon-tripletriangle.png);
+    background-position: center;
 }
 
 @media (hover) {

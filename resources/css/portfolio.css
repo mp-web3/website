@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: calc(var(--margin)*3);
 }
 
 .container {
@@ -35,7 +36,7 @@
     background: rgba(23, 23, 23, 0.7);
     padding: calc(var(--padding)*3) var(--padding);
     border-radius: var(--border-radius);
-    box-shadow: var(--neon-box-shadow);
+    box-shadow: var(--dark-box-shadow);
     max-width: 40%;
 }
 
@@ -46,7 +47,8 @@
 
 .project {
   display: flex;
-  align-items: center;
+  align-items:center;
+  
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -66,7 +68,7 @@
 .project-image-mobile img {
   max-width: 80%;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--neon-box-shadow);
 }
 
 .project-image-mobile {

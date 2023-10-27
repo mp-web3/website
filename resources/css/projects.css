@@ -1,0 +1,7 @@
+.hero {
+    background: 
+    linear-gradient(rgba(135, 43, 151, 0.7), rgba(23, 23, 23, 0.3)),
+    url(../images/portfolio/neon-cube.png);
+    background-size: cover, cover;
+    background-position: center, center;
+}

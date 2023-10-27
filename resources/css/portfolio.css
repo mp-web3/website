@@ -1,0 +1,141 @@
+.hero {
+  background: 
+    linear-gradient(rgba(135, 43, 151, 0.7), rgba(23, 23, 23, 0.3)),
+    url(../images/portfolio/Colorfull-Blocks-NoBg.webp);
+  background-size: cover, contain;
+  background-position: center, center;
+  width: 100%;
+  height: calc(100vh - var(--navbar-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: calc(var(--margin)*3);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--container-width);
+    height: 100%;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--gap)*5);
+}
+
+.container h1 {
+    max-width: 40%;
+}
+
+.paragraph-hero {
+    text-align: center;
+    font-size: 1.25rem;
+    background: rgba(23, 23, 23, 0.7);
+    padding: calc(var(--padding)*3) var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--dark-box-shadow);
+    max-width: 40%;
+}
+
+.highlighted-word {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+.project {
+  display: flex;
+  align-items:center;
+  
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-text {
+  flex: 1;
+  padding: 1rem;
+}
+
+.project-image {
+  flex: 1;
+  text-align: center; /* Centering the image */
+}
+
+.project-image img,
+.project-image-mobile img {
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: var(--neon-box-shadow);
+}
+
+.project-image-mobile {
+  display: none;
+}
+
+.reverse-layout {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1024px) {
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.paragraph-hero, .container h1 {
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+}
+
+.paragraph-hero {
+    font-size: 1rem;
+}
+
+  .above-the-fold {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-text {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .project-image {
+    margin-top: 1rem;
+    display: none;
+  }
+  .project-image-mobile {
+    margin-top: 1rem;
+    flex: 1;
+    display: flex;
+  }
+
+  .project-image-mobile img {
+    max-width: 100%;
+  }
+
+  .reverse-layout {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .paragraph-hero {
+        font-size: 0.85rem;
+    }
+    .highlighted-word {
+        font-size: 1rem;
+    }
+}

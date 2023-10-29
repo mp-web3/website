@@ -227,7 +227,7 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-image: url(../images/hello-world-html-code_50-opacity.png);
+    background-image: url(../images/backgrounds/hello-world-html-code_50-opacity.webp);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -339,19 +339,19 @@ h4 {
 
 #card-1 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/portfolio/neon-supernova.png);
+    var(--accent2-transparent)), url(../images/portfolio/neon-supernova.webp);
     background-position: center;
 }
 
 #card-2 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/portfolio/neon-shell.png);
+    var(--accent2-transparent)), url(../images/portfolio/neon-shell.webp);
     background-position: center;
 }
 
 #card-3 {
     background-image: linear-gradient(180deg, var(--dark-transparent), 
-    var(--accent2-transparent)), url(../images/portfolio/neon-tripletriangle.png);
+    var(--accent2-transparent)), url(../images/portfolio/neon-tripletriangle.webp);
     background-position: center;
 }
 

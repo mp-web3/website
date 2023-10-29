@@ -1,7 +1,7 @@
 .hero {
   background: 
     linear-gradient(rgba(135, 43, 151, 0.7), rgba(23, 23, 23, 0.3)),
-    url(../images/portfolio/Colorfull-Blocks-NoBg.webp);
+    url(../images/portfolio/backgrounds/Colorfull-Blocks.webp);
   background-size: cover, contain;
   background-position: center, center;
   width: 100%;
